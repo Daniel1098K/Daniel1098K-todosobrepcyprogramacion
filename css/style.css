@@ -84,6 +84,9 @@ header {
 
 .nav-bg {
     background-color: var(--secundario);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; 
 }
 
 .navegacion {
@@ -97,15 +100,17 @@ header {
 .navegacion_principal {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
 .navegacion_principal a {
     color: var(--blanco);
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     padding: 1.5rem;
+     text-decoration: none;
 }
 
 .navegacion_enlace {
@@ -128,6 +133,12 @@ header {
     background-size: cover;
     height: 450px;
     position: relative;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding: 0 20px;
 }
 
 .contenido-hero {
@@ -154,7 +165,7 @@ header {
 }
 
 .sombra {
-    box-shadow: 13px -12px 46px -15px rgba(0, 0, 0, 0.75);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #b5e2f4;
 }
 
