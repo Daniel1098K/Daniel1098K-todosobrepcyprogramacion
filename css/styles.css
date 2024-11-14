@@ -230,59 +230,14 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     justify-content: flex-end;
    }}
 
-/* Para pantallas pequeñas (como teléfonos) */
 @media (max-width: 768px) {
-    /* Ajusta el contenedor principal para que se adapte mejor en pantallas pequeñas */
-    .contenedor {
-        width: 90%; /* o 100% para que ocupe toda la pantalla */
-        padding: 0 1rem; /* Añade un pequeño padding lateral */
-    }
-
-    /* Tamaño de fuente más pequeño para títulos y textos */
-    h1, h2, h3, .titulo {
-        font-size: 2.5rem;
-    }
-
-    .titulo span {
-        font-size: 1.5rem;
-    }
-
-    /* Ajusta el tamaño de los botones */
-    .boton {
-        padding: 0.8rem 2rem;
-        font-size: 1.6rem;
-    }
-
-    /* Cambia la dirección del contenido del héroe para que sea más vertical */
     .navegacion_principal {
-        flex-direction: column;
+        flex-direction: column; /* Coloca los enlaces en columna en pantallas pequeñas */
     }
-
-    /* Ajusta la altura del héroe para teléfonos */
-    .hero, .uni {
-        height: 300px;
-        background-size: cover;
+    .hero h2, .hero p, .hero a {
+        text-align: center;
     }
-
-    /* Tamaño más pequeño para las imágenes de los íconos en "servicios" */
-    .servicios .iconos {
-        height: 10rem;
-        width: 10rem;
-    }
-}
-
-/* Para pantallas extra pequeñas (por ejemplo, móviles muy pequeños) */
-@media (max-width: 480px) {
-    .titulo {
-        font-size: 2rem;
-    }
-    .titulo span {
-        font-size: 1.3rem;
-    }
-
-    /* Ajuste adicional para botones y texto */
-    .boton {
-        font-size: 1.4rem;
-        padding: 0.5rem 1.5rem;
+    .contenedor {
+        padding: 0 10px; /* Reduce el padding en pantallas más pequeñas */
     }
 }
